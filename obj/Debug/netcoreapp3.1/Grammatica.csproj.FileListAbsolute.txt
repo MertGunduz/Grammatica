@@ -1,0 +1,16 @@
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.csproj.AssemblyReference.cache
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.Forms.Grammatica_AwakeForm.resources
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.csproj.GenerateResource.cache
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.AssemblyInfoInputs.cache
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.AssemblyInfo.cs
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.csproj.CoreCompileInputs.cache
+C:\Users\u\source\repos\Grammatica\bin\Debug\netcoreapp3.1\Grammatica.exe
+C:\Users\u\source\repos\Grammatica\bin\Debug\netcoreapp3.1\Grammatica.deps.json
+C:\Users\u\source\repos\Grammatica\bin\Debug\netcoreapp3.1\Grammatica.runtimeconfig.json
+C:\Users\u\source\repos\Grammatica\bin\Debug\netcoreapp3.1\Grammatica.runtimeconfig.dev.json
+C:\Users\u\source\repos\Grammatica\bin\Debug\netcoreapp3.1\Grammatica.dll
+C:\Users\u\source\repos\Grammatica\bin\Debug\netcoreapp3.1\Grammatica.pdb
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.dll
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.pdb
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.genruntimeconfig.cache
