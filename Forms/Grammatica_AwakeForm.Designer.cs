@@ -29,12 +29,33 @@ namespace Grammatica.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Grammatica_AwakeForm";
+            this.Main_Panel = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // Main_Panel
+            // 
+            this.Main_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Main_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Main_Panel.Name = "Main_Panel";
+            this.Main_Panel.Size = new System.Drawing.Size(400, 400);
+            this.Main_Panel.TabIndex = 0;
+            // 
+            // Grammatica_AwakeForm
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(400, 400);
+            this.Controls.Add(this.Main_Panel);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Grammatica_AwakeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Grammatica";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel Main_Panel;
     }
 }
