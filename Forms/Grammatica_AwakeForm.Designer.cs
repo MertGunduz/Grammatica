@@ -43,7 +43,14 @@ namespace Grammatica.Forms
             this.RightBorder_Panel = new System.Windows.Forms.Panel();
             this.BottomBorder_Panel = new System.Windows.Forms.Panel();
             this.TopBorder_Panel = new System.Windows.Forms.Panel();
+            this.InnerBottomMargin_Panel = new System.Windows.Forms.Panel();
+            this.InnerTopMargin_Panel = new System.Windows.Forms.Panel();
+            this.InnerLeftMargin_Panel = new System.Windows.Forms.Panel();
+            this.InnerRightMargin_Panel = new System.Windows.Forms.Panel();
+            this.MainLogo_Panel = new System.Windows.Forms.Panel();
+            this.MainHeader_Panel = new System.Windows.Forms.Panel();
             this.Main_Panel.SuspendLayout();
+            this.InnerMain_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Main_Panel
@@ -70,6 +77,12 @@ namespace Grammatica.Forms
             // InnerMain_Panel
             // 
             this.InnerMain_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.InnerMain_Panel.Controls.Add(this.MainHeader_Panel);
+            this.InnerMain_Panel.Controls.Add(this.MainLogo_Panel);
+            this.InnerMain_Panel.Controls.Add(this.InnerBottomMargin_Panel);
+            this.InnerMain_Panel.Controls.Add(this.InnerTopMargin_Panel);
+            this.InnerMain_Panel.Controls.Add(this.InnerLeftMargin_Panel);
+            this.InnerMain_Panel.Controls.Add(this.InnerRightMargin_Panel);
             this.InnerMain_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.InnerMain_Panel.Location = new System.Drawing.Point(44, 44);
             this.InnerMain_Panel.Name = "InnerMain_Panel";
@@ -184,6 +197,58 @@ namespace Grammatica.Forms
             this.TopBorder_Panel.Size = new System.Drawing.Size(400, 2);
             this.TopBorder_Panel.TabIndex = 0;
             // 
+            // InnerBottomMargin_Panel
+            // 
+            this.InnerBottomMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.InnerBottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.InnerBottomMargin_Panel.Location = new System.Drawing.Point(40, 272);
+            this.InnerBottomMargin_Panel.Name = "InnerBottomMargin_Panel";
+            this.InnerBottomMargin_Panel.Size = new System.Drawing.Size(232, 40);
+            this.InnerBottomMargin_Panel.TabIndex = 11;
+            // 
+            // InnerTopMargin_Panel
+            // 
+            this.InnerTopMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.InnerTopMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.InnerTopMargin_Panel.Location = new System.Drawing.Point(40, 0);
+            this.InnerTopMargin_Panel.Name = "InnerTopMargin_Panel";
+            this.InnerTopMargin_Panel.Size = new System.Drawing.Size(232, 40);
+            this.InnerTopMargin_Panel.TabIndex = 10;
+            // 
+            // InnerLeftMargin_Panel
+            // 
+            this.InnerLeftMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.InnerLeftMargin_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.InnerLeftMargin_Panel.Location = new System.Drawing.Point(0, 0);
+            this.InnerLeftMargin_Panel.Name = "InnerLeftMargin_Panel";
+            this.InnerLeftMargin_Panel.Size = new System.Drawing.Size(40, 312);
+            this.InnerLeftMargin_Panel.TabIndex = 9;
+            // 
+            // InnerRightMargin_Panel
+            // 
+            this.InnerRightMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.InnerRightMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.InnerRightMargin_Panel.Location = new System.Drawing.Point(272, 0);
+            this.InnerRightMargin_Panel.Name = "InnerRightMargin_Panel";
+            this.InnerRightMargin_Panel.Size = new System.Drawing.Size(40, 312);
+            this.InnerRightMargin_Panel.TabIndex = 8;
+            // 
+            // MainLogo_Panel
+            // 
+            this.MainLogo_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MainLogo_Panel.Location = new System.Drawing.Point(40, 40);
+            this.MainLogo_Panel.Name = "MainLogo_Panel";
+            this.MainLogo_Panel.Size = new System.Drawing.Size(232, 170);
+            this.MainLogo_Panel.TabIndex = 12;
+            // 
+            // MainHeader_Panel
+            // 
+            this.MainHeader_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MainHeader_Panel.Location = new System.Drawing.Point(40, 210);
+            this.MainHeader_Panel.Name = "MainHeader_Panel";
+            this.MainHeader_Panel.Size = new System.Drawing.Size(232, 62);
+            this.MainHeader_Panel.TabIndex = 13;
+            // 
             // Grammatica_AwakeForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -195,6 +260,7 @@ namespace Grammatica.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grammatica";
             this.Main_Panel.ResumeLayout(false);
+            this.InnerMain_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -215,5 +281,11 @@ namespace Grammatica.Forms
         private System.Windows.Forms.Panel InnerBottomBorder_Panel;
         private System.Windows.Forms.Panel InnerTopBorder_Panel;
         private System.Windows.Forms.Panel InnerMain_Panel;
+        private System.Windows.Forms.Panel InnerBottomMargin_Panel;
+        private System.Windows.Forms.Panel InnerTopMargin_Panel;
+        private System.Windows.Forms.Panel InnerLeftMargin_Panel;
+        private System.Windows.Forms.Panel InnerRightMargin_Panel;
+        private System.Windows.Forms.Panel MainHeader_Panel;
+        private System.Windows.Forms.Panel MainLogo_Panel;
     }
 }
