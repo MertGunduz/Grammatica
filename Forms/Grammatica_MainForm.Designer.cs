@@ -32,6 +32,7 @@ namespace Grammatica.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grammatica_MainForm));
             this.Main_Panel = new System.Windows.Forms.Panel();
             this.WindowControl_Panel = new System.Windows.Forms.Panel();
+            this.TotalWord_Label = new System.Windows.Forms.Label();
             this.MinimizeLogo_Panel = new System.Windows.Forms.Panel();
             this.Minimize_PictureBox = new System.Windows.Forms.PictureBox();
             this.ExitMiddleMargin_Panel = new System.Windows.Forms.Panel();
@@ -49,6 +50,7 @@ namespace Grammatica.Forms
             this.Header_PictureBox = new System.Windows.Forms.PictureBox();
             this.Logo_Panel = new System.Windows.Forms.Panel();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.UserControl_Panel = new System.Windows.Forms.Panel();
             this.Main_Panel.SuspendLayout();
             this.WindowControl_Panel.SuspendLayout();
             this.MinimizeLogo_Panel.SuspendLayout();
@@ -65,6 +67,7 @@ namespace Grammatica.Forms
             // Main_Panel
             // 
             this.Main_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            this.Main_Panel.Controls.Add(this.UserControl_Panel);
             this.Main_Panel.Controls.Add(this.WindowControl_Panel);
             this.Main_Panel.Controls.Add(this.Left_Panel);
             this.Main_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -75,6 +78,7 @@ namespace Grammatica.Forms
             // 
             // WindowControl_Panel
             // 
+            this.WindowControl_Panel.Controls.Add(this.TotalWord_Label);
             this.WindowControl_Panel.Controls.Add(this.MinimizeLogo_Panel);
             this.WindowControl_Panel.Controls.Add(this.ExitMiddleMargin_Panel);
             this.WindowControl_Panel.Controls.Add(this.ExitLogo_Panel);
@@ -86,6 +90,17 @@ namespace Grammatica.Forms
             this.WindowControl_Panel.Name = "WindowControl_Panel";
             this.WindowControl_Panel.Size = new System.Drawing.Size(800, 43);
             this.WindowControl_Panel.TabIndex = 1;
+            // 
+            // TotalWord_Label
+            // 
+            this.TotalWord_Label.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TotalWord_Label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TotalWord_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.TotalWord_Label.Location = new System.Drawing.Point(0, 10);
+            this.TotalWord_Label.Name = "TotalWord_Label";
+            this.TotalWord_Label.Size = new System.Drawing.Size(453, 23);
+            this.TotalWord_Label.TabIndex = 8;
+            this.TotalWord_Label.Text = "  Total Learned Words:";
             // 
             // MinimizeLogo_Panel
             // 
@@ -296,6 +311,14 @@ namespace Grammatica.Forms
             this.Logo_PictureBox.TabIndex = 0;
             this.Logo_PictureBox.TabStop = false;
             // 
+            // UserControl_Panel
+            // 
+            this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserControl_Panel.Location = new System.Drawing.Point(200, 43);
+            this.UserControl_Panel.Name = "UserControl_Panel";
+            this.UserControl_Panel.Size = new System.Drawing.Size(800, 557);
+            this.UserControl_Panel.TabIndex = 2;
+            // 
             // Grammatica_MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -344,5 +367,7 @@ namespace Grammatica.Forms
         private System.Windows.Forms.PictureBox Minimize_PictureBox;
         private System.Windows.Forms.PictureBox Exit_PictureBox;
         private System.Windows.Forms.Panel Navigation_Panel;
+        private System.Windows.Forms.Label TotalWord_Label;
+        private System.Windows.Forms.Panel UserControl_Panel;
     }
 }
