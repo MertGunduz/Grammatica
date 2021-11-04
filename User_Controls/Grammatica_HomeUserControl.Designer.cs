@@ -35,24 +35,24 @@ namespace Grammatica.User_Controls
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Main_Panel = new System.Windows.Forms.Panel();
             this.AddWord_Panel = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.AddWordToDatabase_Panel = new System.Windows.Forms.Panel();
+            this.AddWordToDatabase_Button = new System.Windows.Forms.Button();
+            this.TranslatedWordBottomMargin_Panel = new System.Windows.Forms.Panel();
+            this.TranslatedWord_Panel = new System.Windows.Forms.Panel();
+            this.SubBottom_Panel = new System.Windows.Forms.Panel();
+            this.TranslatedWord_TextBox = new System.Windows.Forms.TextBox();
+            this.SentenceBottomMargin_Panel = new System.Windows.Forms.Panel();
+            this.WordSentence_Panel = new System.Windows.Forms.Panel();
+            this.SubWordSentence_Panel = new System.Windows.Forms.Panel();
+            this.WordSentenceExample_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.SOTextBoxesMargin_Panel = new System.Windows.Forms.Panel();
+            this.SOTextBoxes_Panel = new System.Windows.Forms.Panel();
+            this.Opposite_Panel = new System.Windows.Forms.Panel();
+            this.WordOpposite_TextBox = new System.Windows.Forms.TextBox();
+            this.SOMiddleMargin_Panel = new System.Windows.Forms.Panel();
+            this.Synonym_Panel = new System.Windows.Forms.Panel();
+            this.WordSynonym_TextBox = new System.Windows.Forms.TextBox();
+            this.EnglishWordTextBoxBottomMargin_Panel = new System.Windows.Forms.Panel();
             this.WordEnglish_Panel = new System.Windows.Forms.Panel();
             this.AWordEnglish_Panel = new System.Windows.Forms.Panel();
             this.EnglishWord_TextBox = new System.Windows.Forms.TextBox();
@@ -73,14 +73,14 @@ namespace Grammatica.User_Controls
             this.TopMargin_Panel = new System.Windows.Forms.Panel();
             this.Main_Panel.SuspendLayout();
             this.AddWord_Panel.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
+            this.AddWordToDatabase_Panel.SuspendLayout();
+            this.TranslatedWord_Panel.SuspendLayout();
+            this.SubBottom_Panel.SuspendLayout();
+            this.WordSentence_Panel.SuspendLayout();
+            this.SubWordSentence_Panel.SuspendLayout();
+            this.SOTextBoxes_Panel.SuspendLayout();
+            this.Opposite_Panel.SuspendLayout();
+            this.Synonym_Panel.SuspendLayout();
             this.WordEnglish_Panel.SuspendLayout();
             this.AWordEnglish_Panel.SuspendLayout();
             this.Data_Panel.SuspendLayout();
@@ -108,14 +108,14 @@ namespace Grammatica.User_Controls
             // 
             // AddWord_Panel
             // 
-            this.AddWord_Panel.Controls.Add(this.panel15);
-            this.AddWord_Panel.Controls.Add(this.panel14);
-            this.AddWord_Panel.Controls.Add(this.panel12);
-            this.AddWord_Panel.Controls.Add(this.panel11);
-            this.AddWord_Panel.Controls.Add(this.panel4);
-            this.AddWord_Panel.Controls.Add(this.panel3);
-            this.AddWord_Panel.Controls.Add(this.panel6);
-            this.AddWord_Panel.Controls.Add(this.panel5);
+            this.AddWord_Panel.Controls.Add(this.AddWordToDatabase_Panel);
+            this.AddWord_Panel.Controls.Add(this.TranslatedWordBottomMargin_Panel);
+            this.AddWord_Panel.Controls.Add(this.TranslatedWord_Panel);
+            this.AddWord_Panel.Controls.Add(this.SentenceBottomMargin_Panel);
+            this.AddWord_Panel.Controls.Add(this.WordSentence_Panel);
+            this.AddWord_Panel.Controls.Add(this.SOTextBoxesMargin_Panel);
+            this.AddWord_Panel.Controls.Add(this.SOTextBoxes_Panel);
+            this.AddWord_Panel.Controls.Add(this.EnglishWordTextBoxBottomMargin_Panel);
             this.AddWord_Panel.Controls.Add(this.WordEnglish_Panel);
             this.AddWord_Panel.Controls.Add(this.TopBorder_Panel);
             this.AddWord_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -124,188 +124,198 @@ namespace Grammatica.User_Controls
             this.AddWord_Panel.Size = new System.Drawing.Size(776, 310);
             this.AddWord_Panel.TabIndex = 11;
             // 
-            // panel15
+            // AddWordToDatabase_Panel
             // 
-            this.panel15.Controls.Add(this.button1);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(0, 271);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(776, 39);
-            this.panel15.TabIndex = 10;
+            this.AddWordToDatabase_Panel.Controls.Add(this.AddWordToDatabase_Button);
+            this.AddWordToDatabase_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddWordToDatabase_Panel.Location = new System.Drawing.Point(0, 271);
+            this.AddWordToDatabase_Panel.Name = "AddWordToDatabase_Panel";
+            this.AddWordToDatabase_Panel.Size = new System.Drawing.Size(776, 39);
+            this.AddWordToDatabase_Panel.TabIndex = 10;
             // 
-            // button1
+            // AddWordToDatabase_Button
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.button1.Size = new System.Drawing.Size(776, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add Word To Database";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.AddWordToDatabase_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.AddWordToDatabase_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddWordToDatabase_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddWordToDatabase_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.AddWordToDatabase_Button.FlatAppearance.BorderSize = 0;
+            this.AddWordToDatabase_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.AddWordToDatabase_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.AddWordToDatabase_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddWordToDatabase_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddWordToDatabase_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.AddWordToDatabase_Button.Image = global::Grammatica.Grammatica_Resources.Grammatica_AddIcon;
+            this.AddWordToDatabase_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AddWordToDatabase_Button.Location = new System.Drawing.Point(0, 0);
+            this.AddWordToDatabase_Button.Name = "AddWordToDatabase_Button";
+            this.AddWordToDatabase_Button.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.AddWordToDatabase_Button.Size = new System.Drawing.Size(776, 39);
+            this.AddWordToDatabase_Button.TabIndex = 0;
+            this.AddWordToDatabase_Button.Text = "Add Word To Database";
+            this.AddWordToDatabase_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddWordToDatabase_Button.UseVisualStyleBackColor = false;
+            this.AddWordToDatabase_Button.Click += new System.EventHandler(this.AddWordToDatabase_Button_Click);
             // 
-            // panel14
+            // TranslatedWordBottomMargin_Panel
             // 
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel14.Location = new System.Drawing.Point(0, 261);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(776, 10);
-            this.panel14.TabIndex = 9;
+            this.TranslatedWordBottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TranslatedWordBottomMargin_Panel.Location = new System.Drawing.Point(0, 261);
+            this.TranslatedWordBottomMargin_Panel.Name = "TranslatedWordBottomMargin_Panel";
+            this.TranslatedWordBottomMargin_Panel.Size = new System.Drawing.Size(776, 10);
+            this.TranslatedWordBottomMargin_Panel.TabIndex = 9;
             // 
-            // panel12
+            // TranslatedWord_Panel
             // 
-            this.panel12.Controls.Add(this.panel13);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 228);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(776, 33);
-            this.panel12.TabIndex = 8;
+            this.TranslatedWord_Panel.Controls.Add(this.SubBottom_Panel);
+            this.TranslatedWord_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TranslatedWord_Panel.Location = new System.Drawing.Point(0, 228);
+            this.TranslatedWord_Panel.Name = "TranslatedWord_Panel";
+            this.TranslatedWord_Panel.Size = new System.Drawing.Size(776, 33);
+            this.TranslatedWord_Panel.TabIndex = 8;
             // 
-            // panel13
+            // SubBottom_Panel
             // 
-            this.panel13.Controls.Add(this.textBox3);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(776, 33);
-            this.panel13.TabIndex = 0;
+            this.SubBottom_Panel.Controls.Add(this.TranslatedWord_TextBox);
+            this.SubBottom_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SubBottom_Panel.Location = new System.Drawing.Point(0, 0);
+            this.SubBottom_Panel.Name = "SubBottom_Panel";
+            this.SubBottom_Panel.Size = new System.Drawing.Size(776, 33);
+            this.SubBottom_Panel.TabIndex = 0;
             // 
-            // textBox3
+            // TranslatedWord_TextBox
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.textBox3.Location = new System.Drawing.Point(0, 0);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(776, 33);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.Text = "  Translated Word:";
+            this.TranslatedWord_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.TranslatedWord_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TranslatedWord_TextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TranslatedWord_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.TranslatedWord_TextBox.Location = new System.Drawing.Point(0, 0);
+            this.TranslatedWord_TextBox.Multiline = true;
+            this.TranslatedWord_TextBox.Name = "TranslatedWord_TextBox";
+            this.TranslatedWord_TextBox.Size = new System.Drawing.Size(776, 33);
+            this.TranslatedWord_TextBox.TabIndex = 1;
+            this.TranslatedWord_TextBox.Text = "  Translated Word:";
+            this.TranslatedWord_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TranslatedWord_TextBox_MouseClick);
             // 
-            // panel11
+            // SentenceBottomMargin_Panel
             // 
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 218);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(776, 10);
-            this.panel11.TabIndex = 7;
+            this.SentenceBottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SentenceBottomMargin_Panel.Location = new System.Drawing.Point(0, 218);
+            this.SentenceBottomMargin_Panel.Name = "SentenceBottomMargin_Panel";
+            this.SentenceBottomMargin_Panel.Size = new System.Drawing.Size(776, 10);
+            this.SentenceBottomMargin_Panel.TabIndex = 7;
             // 
-            // panel4
+            // WordSentence_Panel
             // 
-            this.panel4.Controls.Add(this.panel10);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 88);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(776, 130);
-            this.panel4.TabIndex = 6;
+            this.WordSentence_Panel.Controls.Add(this.SubWordSentence_Panel);
+            this.WordSentence_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.WordSentence_Panel.Location = new System.Drawing.Point(0, 88);
+            this.WordSentence_Panel.Name = "WordSentence_Panel";
+            this.WordSentence_Panel.Size = new System.Drawing.Size(776, 130);
+            this.WordSentence_Panel.TabIndex = 6;
             // 
-            // panel10
+            // SubWordSentence_Panel
             // 
-            this.panel10.Controls.Add(this.richTextBox1);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(776, 130);
-            this.panel10.TabIndex = 0;
+            this.SubWordSentence_Panel.Controls.Add(this.WordSentenceExample_RichTextBox);
+            this.SubWordSentence_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SubWordSentence_Panel.Location = new System.Drawing.Point(0, 0);
+            this.SubWordSentence_Panel.Name = "SubWordSentence_Panel";
+            this.SubWordSentence_Panel.Size = new System.Drawing.Size(776, 130);
+            this.SubWordSentence_Panel.TabIndex = 0;
             // 
-            // richTextBox1
+            // WordSentenceExample_RichTextBox
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(776, 130);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "  Word Sentence Example:";
+            this.WordSentenceExample_RichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.WordSentenceExample_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.WordSentenceExample_RichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WordSentenceExample_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.WordSentenceExample_RichTextBox.Location = new System.Drawing.Point(0, 0);
+            this.WordSentenceExample_RichTextBox.Name = "WordSentenceExample_RichTextBox";
+            this.WordSentenceExample_RichTextBox.Size = new System.Drawing.Size(776, 130);
+            this.WordSentenceExample_RichTextBox.TabIndex = 0;
+            this.WordSentenceExample_RichTextBox.Text = "  Word Sentence Example:";
+            this.WordSentenceExample_RichTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.WordSentenceExample_RichTextBox_MouseClick);
             // 
-            // panel3
+            // SOTextBoxesMargin_Panel
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 78);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(776, 10);
-            this.panel3.TabIndex = 5;
+            this.SOTextBoxesMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SOTextBoxesMargin_Panel.Location = new System.Drawing.Point(0, 78);
+            this.SOTextBoxesMargin_Panel.Name = "SOTextBoxesMargin_Panel";
+            this.SOTextBoxesMargin_Panel.Size = new System.Drawing.Size(776, 10);
+            this.SOTextBoxesMargin_Panel.TabIndex = 5;
             // 
-            // panel6
+            // SOTextBoxes_Panel
             // 
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Controls.Add(this.panel8);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 45);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(776, 33);
-            this.panel6.TabIndex = 4;
+            this.SOTextBoxes_Panel.Controls.Add(this.Opposite_Panel);
+            this.SOTextBoxes_Panel.Controls.Add(this.SOMiddleMargin_Panel);
+            this.SOTextBoxes_Panel.Controls.Add(this.Synonym_Panel);
+            this.SOTextBoxes_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SOTextBoxes_Panel.Location = new System.Drawing.Point(0, 45);
+            this.SOTextBoxes_Panel.Name = "SOTextBoxes_Panel";
+            this.SOTextBoxes_Panel.Size = new System.Drawing.Size(776, 33);
+            this.SOTextBoxes_Panel.TabIndex = 4;
             // 
-            // panel7
+            // Opposite_Panel
             // 
-            this.panel7.Controls.Add(this.textBox1);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(393, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(383, 33);
-            this.panel7.TabIndex = 2;
+            this.Opposite_Panel.Controls.Add(this.WordOpposite_TextBox);
+            this.Opposite_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Opposite_Panel.Location = new System.Drawing.Point(393, 0);
+            this.Opposite_Panel.Name = "Opposite_Panel";
+            this.Opposite_Panel.Size = new System.Drawing.Size(383, 33);
+            this.Opposite_Panel.TabIndex = 2;
             // 
-            // textBox1
+            // WordOpposite_TextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(383, 33);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "  Word Opposite:";
+            this.WordOpposite_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.WordOpposite_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.WordOpposite_TextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WordOpposite_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.WordOpposite_TextBox.Location = new System.Drawing.Point(0, 0);
+            this.WordOpposite_TextBox.Multiline = true;
+            this.WordOpposite_TextBox.Name = "WordOpposite_TextBox";
+            this.WordOpposite_TextBox.Size = new System.Drawing.Size(383, 33);
+            this.WordOpposite_TextBox.TabIndex = 1;
+            this.WordOpposite_TextBox.Text = "  Word Opposite:";
+            this.WordOpposite_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.WordOpposite_TextBox_MouseClick);
             // 
-            // panel8
+            // SOMiddleMargin_Panel
             // 
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(383, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(10, 33);
-            this.panel8.TabIndex = 1;
+            this.SOMiddleMargin_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SOMiddleMargin_Panel.Location = new System.Drawing.Point(383, 0);
+            this.SOMiddleMargin_Panel.Name = "SOMiddleMargin_Panel";
+            this.SOMiddleMargin_Panel.Size = new System.Drawing.Size(10, 33);
+            this.SOMiddleMargin_Panel.TabIndex = 1;
             // 
-            // panel9
+            // Synonym_Panel
             // 
-            this.panel9.Controls.Add(this.textBox2);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(383, 33);
-            this.panel9.TabIndex = 0;
+            this.Synonym_Panel.Controls.Add(this.WordSynonym_TextBox);
+            this.Synonym_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Synonym_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Synonym_Panel.Name = "Synonym_Panel";
+            this.Synonym_Panel.Size = new System.Drawing.Size(383, 33);
+            this.Synonym_Panel.TabIndex = 0;
             // 
-            // textBox2
+            // WordSynonym_TextBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(383, 33);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "  Word Synonym:";
+            this.WordSynonym_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            this.WordSynonym_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.WordSynonym_TextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WordSynonym_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.WordSynonym_TextBox.Location = new System.Drawing.Point(0, 0);
+            this.WordSynonym_TextBox.Multiline = true;
+            this.WordSynonym_TextBox.Name = "WordSynonym_TextBox";
+            this.WordSynonym_TextBox.Size = new System.Drawing.Size(383, 33);
+            this.WordSynonym_TextBox.TabIndex = 1;
+            this.WordSynonym_TextBox.Text = "  Word Synonym:";
+            this.WordSynonym_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.WordSynonym_TextBox_MouseClick);
             // 
-            // panel5
+            // EnglishWordTextBoxBottomMargin_Panel
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 35);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(776, 10);
-            this.panel5.TabIndex = 3;
+            this.EnglishWordTextBoxBottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.EnglishWordTextBoxBottomMargin_Panel.Location = new System.Drawing.Point(0, 35);
+            this.EnglishWordTextBoxBottomMargin_Panel.Name = "EnglishWordTextBoxBottomMargin_Panel";
+            this.EnglishWordTextBoxBottomMargin_Panel.Size = new System.Drawing.Size(776, 10);
+            this.EnglishWordTextBoxBottomMargin_Panel.TabIndex = 3;
             // 
             // WordEnglish_Panel
             // 
@@ -337,6 +347,7 @@ namespace Grammatica.User_Controls
             this.EnglishWord_TextBox.Size = new System.Drawing.Size(776, 33);
             this.EnglishWord_TextBox.TabIndex = 0;
             this.EnglishWord_TextBox.Text = "  English Word:";
+            this.EnglishWord_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.EnglishWord_TextBox_MouseClick);
             // 
             // TopBorder_Panel
             // 
@@ -522,17 +533,17 @@ namespace Grammatica.User_Controls
             this.Load += new System.EventHandler(this.Grammatica_HomeUserControl_Load);
             this.Main_Panel.ResumeLayout(false);
             this.AddWord_Panel.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.AddWordToDatabase_Panel.ResumeLayout(false);
+            this.TranslatedWord_Panel.ResumeLayout(false);
+            this.SubBottom_Panel.ResumeLayout(false);
+            this.SubBottom_Panel.PerformLayout();
+            this.WordSentence_Panel.ResumeLayout(false);
+            this.SubWordSentence_Panel.ResumeLayout(false);
+            this.SOTextBoxes_Panel.ResumeLayout(false);
+            this.Opposite_Panel.ResumeLayout(false);
+            this.Opposite_Panel.PerformLayout();
+            this.Synonym_Panel.ResumeLayout(false);
+            this.Synonym_Panel.PerformLayout();
             this.WordEnglish_Panel.ResumeLayout(false);
             this.AWordEnglish_Panel.ResumeLayout(false);
             this.AWordEnglish_Panel.PerformLayout();
@@ -561,26 +572,26 @@ namespace Grammatica.User_Controls
         private System.Windows.Forms.Panel AddWord_Panel;
         private System.Windows.Forms.Panel TopBorder_Panel;
         private System.Windows.Forms.DataGridView Word_DataGridView;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel SOTextBoxes_Panel;
+        private System.Windows.Forms.Panel Opposite_Panel;
+        private System.Windows.Forms.Panel SOMiddleMargin_Panel;
+        private System.Windows.Forms.Panel Synonym_Panel;
+        private System.Windows.Forms.Panel EnglishWordTextBoxBottomMargin_Panel;
         private System.Windows.Forms.Panel WordEnglish_Panel;
         private System.Windows.Forms.Panel AWordEnglish_Panel;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel AddWordToDatabase_Panel;
+        private System.Windows.Forms.Panel TranslatedWordBottomMargin_Panel;
+        private System.Windows.Forms.Panel TranslatedWord_Panel;
+        private System.Windows.Forms.Panel SubBottom_Panel;
+        private System.Windows.Forms.Panel SentenceBottomMargin_Panel;
+        private System.Windows.Forms.Panel WordSentence_Panel;
+        private System.Windows.Forms.Panel SubWordSentence_Panel;
+        private System.Windows.Forms.Panel SOTextBoxesMargin_Panel;
         private System.Windows.Forms.TextBox EnglishWord_TextBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox WordOpposite_TextBox;
+        private System.Windows.Forms.TextBox WordSynonym_TextBox;
+        private System.Windows.Forms.RichTextBox WordSentenceExample_RichTextBox;
+        private System.Windows.Forms.Button AddWordToDatabase_Button;
+        private System.Windows.Forms.TextBox TranslatedWord_TextBox;
     }
 }
