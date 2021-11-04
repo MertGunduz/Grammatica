@@ -32,16 +32,7 @@ namespace Grammatica.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grammatica_MainForm));
             this.Main_Panel = new System.Windows.Forms.Panel();
             this.UserControl_Panel = new System.Windows.Forms.Panel();
-            this.WindowControl_Panel = new System.Windows.Forms.Panel();
-            this.TotalWord_Label = new System.Windows.Forms.Label();
-            this.MinimizeLogo_Panel = new System.Windows.Forms.Panel();
-            this.Minimize_PictureBox = new System.Windows.Forms.PictureBox();
-            this.ExitMiddleMargin_Panel = new System.Windows.Forms.Panel();
-            this.ExitLogo_Panel = new System.Windows.Forms.Panel();
-            this.Exit_PictureBox = new System.Windows.Forms.PictureBox();
-            this.ExitRightMargin_Panel = new System.Windows.Forms.Panel();
-            this.WindowControlBottomMargin_Panel = new System.Windows.Forms.Panel();
-            this.WindowControlTopMargin_Panel = new System.Windows.Forms.Panel();
+            this.grammatica_HomeUserControl1 = new Grammatica.User_Controls.Grammatica_HomeUserControl();
             this.Left_Panel = new System.Windows.Forms.Panel();
             this.Navigation_Panel = new System.Windows.Forms.Panel();
             this.Settings_Button = new System.Windows.Forms.Button();
@@ -51,19 +42,27 @@ namespace Grammatica.Forms
             this.Header_PictureBox = new System.Windows.Forms.PictureBox();
             this.Logo_Panel = new System.Windows.Forms.Panel();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
-            this.grammatica_HomeUserControl1 = new Grammatica.User_Controls.Grammatica_HomeUserControl();
+            this.WindowControlTopMargin_Panel = new System.Windows.Forms.Panel();
+            this.ExitRightMargin_Panel = new System.Windows.Forms.Panel();
+            this.ExitLogo_Panel = new System.Windows.Forms.Panel();
+            this.Exit_PictureBox = new System.Windows.Forms.PictureBox();
+            this.ExitMiddleMargin_Panel = new System.Windows.Forms.Panel();
+            this.MinimizeLogo_Panel = new System.Windows.Forms.Panel();
+            this.Minimize_PictureBox = new System.Windows.Forms.PictureBox();
+            this.TotalWord_Label = new System.Windows.Forms.Label();
+            this.WindowControl_Panel = new System.Windows.Forms.Panel();
             this.Main_Panel.SuspendLayout();
             this.UserControl_Panel.SuspendLayout();
-            this.WindowControl_Panel.SuspendLayout();
-            this.MinimizeLogo_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).BeginInit();
-            this.ExitLogo_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).BeginInit();
             this.Left_Panel.SuspendLayout();
             this.Header_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Header_PictureBox)).BeginInit();
             this.Logo_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
+            this.ExitLogo_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).BeginInit();
+            this.MinimizeLogo_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).BeginInit();
+            this.WindowControl_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Main_Panel
@@ -82,112 +81,20 @@ namespace Grammatica.Forms
             // 
             this.UserControl_Panel.Controls.Add(this.grammatica_HomeUserControl1);
             this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UserControl_Panel.Location = new System.Drawing.Point(200, 43);
+            this.UserControl_Panel.Location = new System.Drawing.Point(200, 37);
             this.UserControl_Panel.Name = "UserControl_Panel";
-            this.UserControl_Panel.Size = new System.Drawing.Size(800, 557);
+            this.UserControl_Panel.Size = new System.Drawing.Size(800, 563);
             this.UserControl_Panel.TabIndex = 2;
             // 
-            // WindowControl_Panel
+            // grammatica_HomeUserControl1
             // 
-            this.WindowControl_Panel.Controls.Add(this.TotalWord_Label);
-            this.WindowControl_Panel.Controls.Add(this.MinimizeLogo_Panel);
-            this.WindowControl_Panel.Controls.Add(this.ExitMiddleMargin_Panel);
-            this.WindowControl_Panel.Controls.Add(this.ExitLogo_Panel);
-            this.WindowControl_Panel.Controls.Add(this.ExitRightMargin_Panel);
-            this.WindowControl_Panel.Controls.Add(this.WindowControlBottomMargin_Panel);
-            this.WindowControl_Panel.Controls.Add(this.WindowControlTopMargin_Panel);
-            this.WindowControl_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.WindowControl_Panel.Location = new System.Drawing.Point(200, 0);
-            this.WindowControl_Panel.Name = "WindowControl_Panel";
-            this.WindowControl_Panel.Size = new System.Drawing.Size(800, 43);
-            this.WindowControl_Panel.TabIndex = 1;
-            // 
-            // TotalWord_Label
-            // 
-            this.TotalWord_Label.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TotalWord_Label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TotalWord_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.TotalWord_Label.Location = new System.Drawing.Point(0, 10);
-            this.TotalWord_Label.Name = "TotalWord_Label";
-            this.TotalWord_Label.Size = new System.Drawing.Size(453, 23);
-            this.TotalWord_Label.TabIndex = 8;
-            this.TotalWord_Label.Text = "  Total Learned Words:";
-            // 
-            // MinimizeLogo_Panel
-            // 
-            this.MinimizeLogo_Panel.Controls.Add(this.Minimize_PictureBox);
-            this.MinimizeLogo_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MinimizeLogo_Panel.Location = new System.Drawing.Point(734, 10);
-            this.MinimizeLogo_Panel.Name = "MinimizeLogo_Panel";
-            this.MinimizeLogo_Panel.Size = new System.Drawing.Size(23, 23);
-            this.MinimizeLogo_Panel.TabIndex = 7;
-            // 
-            // Minimize_PictureBox
-            // 
-            this.Minimize_PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Minimize_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Minimize_PictureBox.Image = global::Grammatica.Grammatica_Resources.Grammatica_HorizontalLineIcon;
-            this.Minimize_PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.Minimize_PictureBox.Name = "Minimize_PictureBox";
-            this.Minimize_PictureBox.Size = new System.Drawing.Size(23, 23);
-            this.Minimize_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Minimize_PictureBox.TabIndex = 0;
-            this.Minimize_PictureBox.TabStop = false;
-            this.Minimize_PictureBox.Click += new System.EventHandler(this.Minimize_PictureBox_Click);
-            // 
-            // ExitMiddleMargin_Panel
-            // 
-            this.ExitMiddleMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ExitMiddleMargin_Panel.Location = new System.Drawing.Point(757, 10);
-            this.ExitMiddleMargin_Panel.Name = "ExitMiddleMargin_Panel";
-            this.ExitMiddleMargin_Panel.Size = new System.Drawing.Size(10, 23);
-            this.ExitMiddleMargin_Panel.TabIndex = 6;
-            // 
-            // ExitLogo_Panel
-            // 
-            this.ExitLogo_Panel.Controls.Add(this.Exit_PictureBox);
-            this.ExitLogo_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ExitLogo_Panel.Location = new System.Drawing.Point(767, 10);
-            this.ExitLogo_Panel.Name = "ExitLogo_Panel";
-            this.ExitLogo_Panel.Size = new System.Drawing.Size(23, 23);
-            this.ExitLogo_Panel.TabIndex = 5;
-            // 
-            // Exit_PictureBox
-            // 
-            this.Exit_PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Exit_PictureBox.Image = global::Grammatica.Grammatica_Resources.Grammatica_ExitIcon;
-            this.Exit_PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.Exit_PictureBox.Name = "Exit_PictureBox";
-            this.Exit_PictureBox.Size = new System.Drawing.Size(23, 23);
-            this.Exit_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Exit_PictureBox.TabIndex = 1;
-            this.Exit_PictureBox.TabStop = false;
-            this.Exit_PictureBox.Click += new System.EventHandler(this.Exit_PictureBox_Click);
-            // 
-            // ExitRightMargin_Panel
-            // 
-            this.ExitRightMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ExitRightMargin_Panel.Location = new System.Drawing.Point(790, 10);
-            this.ExitRightMargin_Panel.Name = "ExitRightMargin_Panel";
-            this.ExitRightMargin_Panel.Size = new System.Drawing.Size(10, 23);
-            this.ExitRightMargin_Panel.TabIndex = 4;
-            // 
-            // WindowControlBottomMargin_Panel
-            // 
-            this.WindowControlBottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.WindowControlBottomMargin_Panel.Location = new System.Drawing.Point(0, 33);
-            this.WindowControlBottomMargin_Panel.Name = "WindowControlBottomMargin_Panel";
-            this.WindowControlBottomMargin_Panel.Size = new System.Drawing.Size(800, 10);
-            this.WindowControlBottomMargin_Panel.TabIndex = 3;
-            // 
-            // WindowControlTopMargin_Panel
-            // 
-            this.WindowControlTopMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.WindowControlTopMargin_Panel.Location = new System.Drawing.Point(0, 0);
-            this.WindowControlTopMargin_Panel.Name = "WindowControlTopMargin_Panel";
-            this.WindowControlTopMargin_Panel.Size = new System.Drawing.Size(800, 10);
-            this.WindowControlTopMargin_Panel.TabIndex = 2;
+            this.grammatica_HomeUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            this.grammatica_HomeUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grammatica_HomeUserControl1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.grammatica_HomeUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.grammatica_HomeUserControl1.Name = "grammatica_HomeUserControl1";
+            this.grammatica_HomeUserControl1.Size = new System.Drawing.Size(800, 563);
+            this.grammatica_HomeUserControl1.TabIndex = 0;
             // 
             // Left_Panel
             // 
@@ -322,15 +229,98 @@ namespace Grammatica.Forms
             this.Logo_PictureBox.TabIndex = 0;
             this.Logo_PictureBox.TabStop = false;
             // 
-            // grammatica_HomeUserControl1
+            // WindowControlTopMargin_Panel
             // 
-            this.grammatica_HomeUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
-            this.grammatica_HomeUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grammatica_HomeUserControl1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.grammatica_HomeUserControl1.Location = new System.Drawing.Point(0, 0);
-            this.grammatica_HomeUserControl1.Name = "grammatica_HomeUserControl1";
-            this.grammatica_HomeUserControl1.Size = new System.Drawing.Size(800, 557);
-            this.grammatica_HomeUserControl1.TabIndex = 0;
+            this.WindowControlTopMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.WindowControlTopMargin_Panel.Location = new System.Drawing.Point(0, 0);
+            this.WindowControlTopMargin_Panel.Name = "WindowControlTopMargin_Panel";
+            this.WindowControlTopMargin_Panel.Size = new System.Drawing.Size(800, 10);
+            this.WindowControlTopMargin_Panel.TabIndex = 2;
+            // 
+            // ExitRightMargin_Panel
+            // 
+            this.ExitRightMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ExitRightMargin_Panel.Location = new System.Drawing.Point(790, 10);
+            this.ExitRightMargin_Panel.Name = "ExitRightMargin_Panel";
+            this.ExitRightMargin_Panel.Size = new System.Drawing.Size(10, 27);
+            this.ExitRightMargin_Panel.TabIndex = 4;
+            // 
+            // ExitLogo_Panel
+            // 
+            this.ExitLogo_Panel.Controls.Add(this.Exit_PictureBox);
+            this.ExitLogo_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ExitLogo_Panel.Location = new System.Drawing.Point(767, 10);
+            this.ExitLogo_Panel.Name = "ExitLogo_Panel";
+            this.ExitLogo_Panel.Size = new System.Drawing.Size(23, 27);
+            this.ExitLogo_Panel.TabIndex = 5;
+            // 
+            // Exit_PictureBox
+            // 
+            this.Exit_PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Exit_PictureBox.Image = global::Grammatica.Grammatica_Resources.Grammatica_ExitIcon;
+            this.Exit_PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.Exit_PictureBox.Name = "Exit_PictureBox";
+            this.Exit_PictureBox.Size = new System.Drawing.Size(23, 27);
+            this.Exit_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Exit_PictureBox.TabIndex = 1;
+            this.Exit_PictureBox.TabStop = false;
+            this.Exit_PictureBox.Click += new System.EventHandler(this.Exit_PictureBox_Click);
+            // 
+            // ExitMiddleMargin_Panel
+            // 
+            this.ExitMiddleMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ExitMiddleMargin_Panel.Location = new System.Drawing.Point(757, 10);
+            this.ExitMiddleMargin_Panel.Name = "ExitMiddleMargin_Panel";
+            this.ExitMiddleMargin_Panel.Size = new System.Drawing.Size(10, 27);
+            this.ExitMiddleMargin_Panel.TabIndex = 6;
+            // 
+            // MinimizeLogo_Panel
+            // 
+            this.MinimizeLogo_Panel.Controls.Add(this.Minimize_PictureBox);
+            this.MinimizeLogo_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimizeLogo_Panel.Location = new System.Drawing.Point(734, 10);
+            this.MinimizeLogo_Panel.Name = "MinimizeLogo_Panel";
+            this.MinimizeLogo_Panel.Size = new System.Drawing.Size(23, 27);
+            this.MinimizeLogo_Panel.TabIndex = 7;
+            // 
+            // Minimize_PictureBox
+            // 
+            this.Minimize_PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Minimize_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Minimize_PictureBox.Image = global::Grammatica.Grammatica_Resources.Grammatica_HorizontalLineIcon;
+            this.Minimize_PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.Minimize_PictureBox.Name = "Minimize_PictureBox";
+            this.Minimize_PictureBox.Size = new System.Drawing.Size(23, 27);
+            this.Minimize_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Minimize_PictureBox.TabIndex = 0;
+            this.Minimize_PictureBox.TabStop = false;
+            this.Minimize_PictureBox.Click += new System.EventHandler(this.Minimize_PictureBox_Click);
+            // 
+            // TotalWord_Label
+            // 
+            this.TotalWord_Label.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TotalWord_Label.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TotalWord_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.TotalWord_Label.Location = new System.Drawing.Point(0, 10);
+            this.TotalWord_Label.Name = "TotalWord_Label";
+            this.TotalWord_Label.Size = new System.Drawing.Size(453, 27);
+            this.TotalWord_Label.TabIndex = 8;
+            this.TotalWord_Label.Text = "  Total Learned Words:";
+            // 
+            // WindowControl_Panel
+            // 
+            this.WindowControl_Panel.Controls.Add(this.TotalWord_Label);
+            this.WindowControl_Panel.Controls.Add(this.MinimizeLogo_Panel);
+            this.WindowControl_Panel.Controls.Add(this.ExitMiddleMargin_Panel);
+            this.WindowControl_Panel.Controls.Add(this.ExitLogo_Panel);
+            this.WindowControl_Panel.Controls.Add(this.ExitRightMargin_Panel);
+            this.WindowControl_Panel.Controls.Add(this.WindowControlTopMargin_Panel);
+            this.WindowControl_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.WindowControl_Panel.Location = new System.Drawing.Point(200, 0);
+            this.WindowControl_Panel.Name = "WindowControl_Panel";
+            this.WindowControl_Panel.Size = new System.Drawing.Size(800, 37);
+            this.WindowControl_Panel.TabIndex = 1;
             // 
             // Grammatica_MainForm
             // 
@@ -346,16 +336,16 @@ namespace Grammatica.Forms
             this.Load += new System.EventHandler(this.Grammatica_MainForm_Load);
             this.Main_Panel.ResumeLayout(false);
             this.UserControl_Panel.ResumeLayout(false);
-            this.WindowControl_Panel.ResumeLayout(false);
-            this.MinimizeLogo_Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).EndInit();
-            this.ExitLogo_Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).EndInit();
             this.Left_Panel.ResumeLayout(false);
             this.Header_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Header_PictureBox)).EndInit();
             this.Logo_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
+            this.ExitLogo_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).EndInit();
+            this.MinimizeLogo_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).EndInit();
+            this.WindowControl_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -371,18 +361,17 @@ namespace Grammatica.Forms
         private System.Windows.Forms.Button Home_Button;
         private System.Windows.Forms.Button Settings_Button;
         private System.Windows.Forms.Button Statistics_Button;
-        private System.Windows.Forms.Panel WindowControl_Panel;
-        private System.Windows.Forms.Panel MinimizeLogo_Panel;
-        private System.Windows.Forms.Panel ExitMiddleMargin_Panel;
-        private System.Windows.Forms.Panel ExitLogo_Panel;
-        private System.Windows.Forms.Panel ExitRightMargin_Panel;
-        private System.Windows.Forms.Panel WindowControlBottomMargin_Panel;
-        private System.Windows.Forms.Panel WindowControlTopMargin_Panel;
-        private System.Windows.Forms.PictureBox Minimize_PictureBox;
-        private System.Windows.Forms.PictureBox Exit_PictureBox;
         private System.Windows.Forms.Panel Navigation_Panel;
-        private System.Windows.Forms.Label TotalWord_Label;
         private System.Windows.Forms.Panel UserControl_Panel;
         private User_Controls.Grammatica_HomeUserControl grammatica_HomeUserControl1;
+        private System.Windows.Forms.Panel WindowControl_Panel;
+        private System.Windows.Forms.Label TotalWord_Label;
+        private System.Windows.Forms.Panel MinimizeLogo_Panel;
+        private System.Windows.Forms.PictureBox Minimize_PictureBox;
+        private System.Windows.Forms.Panel ExitMiddleMargin_Panel;
+        private System.Windows.Forms.Panel ExitLogo_Panel;
+        private System.Windows.Forms.PictureBox Exit_PictureBox;
+        private System.Windows.Forms.Panel ExitRightMargin_Panel;
+        private System.Windows.Forms.Panel WindowControlTopMargin_Panel;
     }
 }

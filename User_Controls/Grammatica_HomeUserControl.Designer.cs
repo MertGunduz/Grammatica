@@ -50,10 +50,19 @@ namespace Grammatica.User_Controls
             this.RightMargin_Panel = new System.Windows.Forms.Panel();
             this.BottomMargin_Panel = new System.Windows.Forms.Panel();
             this.TopMargin_Panel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.Main_Panel.SuspendLayout();
             this.AddWord_Panel.SuspendLayout();
             this.Data_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Word_DataGridView)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // Main_Panel
@@ -77,6 +86,9 @@ namespace Grammatica.User_Controls
             // 
             // AddWord_Panel
             // 
+            this.AddWord_Panel.Controls.Add(this.panel6);
+            this.AddWord_Panel.Controls.Add(this.panel5);
+            this.AddWord_Panel.Controls.Add(this.panel1);
             this.AddWord_Panel.Controls.Add(this.TopBorder_Panel);
             this.AddWord_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddWord_Panel.Location = new System.Drawing.Point(12, 10);
@@ -257,6 +269,66 @@ namespace Grammatica.User_Controls
             this.TopMargin_Panel.Size = new System.Drawing.Size(800, 10);
             this.TopMargin_Panel.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(776, 33);
+            this.panel1.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(776, 33);
+            this.panel2.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 35);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(776, 10);
+            this.panel5.TabIndex = 3;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 45);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(776, 33);
+            this.panel6.TabIndex = 4;
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(393, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(383, 33);
+            this.panel7.TabIndex = 2;
+            // 
+            // panel8
+            // 
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(383, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(10, 33);
+            this.panel8.TabIndex = 1;
+            // 
+            // panel9
+            // 
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(383, 33);
+            this.panel9.TabIndex = 0;
+            // 
             // Grammatica_HomeUserControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -270,6 +342,8 @@ namespace Grammatica.User_Controls
             this.AddWord_Panel.ResumeLayout(false);
             this.Data_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Word_DataGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -293,5 +367,12 @@ namespace Grammatica.User_Controls
         private System.Windows.Forms.Panel AddWord_Panel;
         private System.Windows.Forms.Panel TopBorder_Panel;
         private System.Windows.Forms.DataGridView Word_DataGridView;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
