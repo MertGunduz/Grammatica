@@ -7,5 +7,8 @@
     <Compile Update="Forms\Grammatica_MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="User_Controls\Grammatica_HomeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

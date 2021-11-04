@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="User_Controls\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Grammatica_Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
