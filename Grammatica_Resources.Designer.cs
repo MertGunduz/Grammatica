@@ -63,6 +63,26 @@ namespace Grammatica {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Grammatica_HomeIcon {
+            get {
+                object obj = ResourceManager.GetObject("Grammatica_HomeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Grammatica_LittleLogoHeaderIcon {
+            get {
+                object obj = ResourceManager.GetObject("Grammatica_LittleLogoHeaderIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Grammatica_LogoHeaderIcon {
             get {
                 object obj = ResourceManager.GetObject("Grammatica_LogoHeaderIcon", resourceCulture);
@@ -76,6 +96,26 @@ namespace Grammatica {
         internal static System.Drawing.Bitmap Grammatica_LogoIcon {
             get {
                 object obj = ResourceManager.GetObject("Grammatica_LogoIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Grammatica_SettingsIcon {
+            get {
+                object obj = ResourceManager.GetObject("Grammatica_SettingsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Grammatica_StatisticsIcon {
+            get {
+                object obj = ResourceManager.GetObject("Grammatica_StatisticsIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
