@@ -14,3 +14,4 @@ C:\Users\u\source\repos\Grammatica\bin\Debug\netcoreapp3.1\Grammatica.pdb
 C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.dll
 C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.pdb
 C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.genruntimeconfig.cache
+C:\Users\u\source\repos\Grammatica\obj\Debug\netcoreapp3.1\Grammatica.Grammatica_Resources.resources
