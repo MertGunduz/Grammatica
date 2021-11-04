@@ -133,6 +133,16 @@ namespace Grammatica {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Grammatica_RefreshIcon {
+            get {
+                object obj = ResourceManager.GetObject("Grammatica_RefreshIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Grammatica_SettingsIcon {
             get {
                 object obj = ResourceManager.GetObject("Grammatica_SettingsIcon", resourceCulture);
