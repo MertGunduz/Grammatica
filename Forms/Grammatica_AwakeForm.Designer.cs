@@ -30,6 +30,7 @@ namespace Grammatica.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grammatica_AwakeForm));
             this.Main_Panel = new System.Windows.Forms.Panel();
             this.InnerMain_Panel = new System.Windows.Forms.Panel();
             this.MainHeader_Panel = new System.Windows.Forms.Panel();
@@ -293,6 +294,7 @@ namespace Grammatica.Forms
             this.Controls.Add(this.Main_Panel);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Grammatica_AwakeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grammatica";
