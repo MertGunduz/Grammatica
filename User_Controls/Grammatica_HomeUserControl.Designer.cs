@@ -30,175 +30,189 @@ namespace Grammatica.User_Controls
         private void InitializeComponent()
         {
             this.Main_Panel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.AddWord_Panel = new System.Windows.Forms.Panel();
+            this.WordTopMargin_Panel = new System.Windows.Forms.Panel();
+            this.WordBottomMargin_Panel = new System.Windows.Forms.Panel();
+            this.WordLeftMargin_Panel = new System.Windows.Forms.Panel();
+            this.WordRightMargin_Panel = new System.Windows.Forms.Panel();
+            this.MidMargin_Panel = new System.Windows.Forms.Panel();
+            this.Data_Panel = new System.Windows.Forms.Panel();
+            this.Word_DataGridView = new System.Windows.Forms.DataGridView();
+            this.DataTopMargin_Panel = new System.Windows.Forms.Panel();
+            this.DataLeftMargin_Panel = new System.Windows.Forms.Panel();
+            this.DataRightMargin_Panel = new System.Windows.Forms.Panel();
+            this.DataBottomMargin_Panel = new System.Windows.Forms.Panel();
+            this.LeftMargin_Panel = new System.Windows.Forms.Panel();
+            this.RightMargin_Panel = new System.Windows.Forms.Panel();
+            this.BottomMargin_Panel = new System.Windows.Forms.Panel();
+            this.TopMargin_Panel = new System.Windows.Forms.Panel();
             this.Main_Panel.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.Data_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Word_DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // Main_Panel
             // 
-            this.Main_Panel.Controls.Add(this.panel15);
-            this.Main_Panel.Controls.Add(this.panel11);
-            this.Main_Panel.Controls.Add(this.panel12);
-            this.Main_Panel.Controls.Add(this.panel13);
-            this.Main_Panel.Controls.Add(this.panel14);
-            this.Main_Panel.Controls.Add(this.panel10);
-            this.Main_Panel.Controls.Add(this.panel6);
-            this.Main_Panel.Controls.Add(this.panel5);
-            this.Main_Panel.Controls.Add(this.panel4);
-            this.Main_Panel.Controls.Add(this.panel3);
-            this.Main_Panel.Controls.Add(this.panel2);
-            this.Main_Panel.Controls.Add(this.panel1);
+            this.Main_Panel.Controls.Add(this.AddWord_Panel);
+            this.Main_Panel.Controls.Add(this.WordTopMargin_Panel);
+            this.Main_Panel.Controls.Add(this.WordBottomMargin_Panel);
+            this.Main_Panel.Controls.Add(this.WordLeftMargin_Panel);
+            this.Main_Panel.Controls.Add(this.WordRightMargin_Panel);
+            this.Main_Panel.Controls.Add(this.MidMargin_Panel);
+            this.Main_Panel.Controls.Add(this.Data_Panel);
+            this.Main_Panel.Controls.Add(this.DataBottomMargin_Panel);
+            this.Main_Panel.Controls.Add(this.LeftMargin_Panel);
+            this.Main_Panel.Controls.Add(this.RightMargin_Panel);
+            this.Main_Panel.Controls.Add(this.BottomMargin_Panel);
+            this.Main_Panel.Controls.Add(this.TopMargin_Panel);
             this.Main_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Main_Panel.Location = new System.Drawing.Point(0, 0);
             this.Main_Panel.Name = "Main_Panel";
             this.Main_Panel.Size = new System.Drawing.Size(800, 557);
             this.Main_Panel.TabIndex = 0;
             // 
-            // panel1
+            // AddWord_Panel
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 10);
-            this.panel1.TabIndex = 0;
+            this.AddWord_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddWord_Panel.Location = new System.Drawing.Point(12, 12);
+            this.AddWord_Panel.Name = "AddWord_Panel";
+            this.AddWord_Panel.Size = new System.Drawing.Size(776, 308);
+            this.AddWord_Panel.TabIndex = 11;
             // 
-            // panel2
+            // WordTopMargin_Panel
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 547);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 10);
-            this.panel2.TabIndex = 1;
+            this.WordTopMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.WordTopMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.WordTopMargin_Panel.Location = new System.Drawing.Point(12, 10);
+            this.WordTopMargin_Panel.Name = "WordTopMargin_Panel";
+            this.WordTopMargin_Panel.Size = new System.Drawing.Size(776, 2);
+            this.WordTopMargin_Panel.TabIndex = 9;
             // 
-            // panel3
+            // WordBottomMargin_Panel
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(790, 10);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 537);
-            this.panel3.TabIndex = 2;
+            this.WordBottomMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.WordBottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.WordBottomMargin_Panel.Location = new System.Drawing.Point(12, 320);
+            this.WordBottomMargin_Panel.Name = "WordBottomMargin_Panel";
+            this.WordBottomMargin_Panel.Size = new System.Drawing.Size(776, 2);
+            this.WordBottomMargin_Panel.TabIndex = 10;
             // 
-            // panel4
+            // WordLeftMargin_Panel
             // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 10);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 537);
-            this.panel4.TabIndex = 3;
+            this.WordLeftMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.WordLeftMargin_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.WordLeftMargin_Panel.Location = new System.Drawing.Point(10, 10);
+            this.WordLeftMargin_Panel.Name = "WordLeftMargin_Panel";
+            this.WordLeftMargin_Panel.Size = new System.Drawing.Size(2, 312);
+            this.WordLeftMargin_Panel.TabIndex = 8;
             // 
-            // panel5
+            // WordRightMargin_Panel
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(10, 545);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(780, 2);
-            this.panel5.TabIndex = 4;
+            this.WordRightMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.WordRightMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.WordRightMargin_Panel.Location = new System.Drawing.Point(788, 10);
+            this.WordRightMargin_Panel.Name = "WordRightMargin_Panel";
+            this.WordRightMargin_Panel.Size = new System.Drawing.Size(2, 312);
+            this.WordRightMargin_Panel.TabIndex = 7;
             // 
-            // panel6
+            // MidMargin_Panel
             // 
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Controls.Add(this.panel8);
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(10, 332);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(780, 213);
-            this.panel6.TabIndex = 5;
+            this.MidMargin_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.MidMargin_Panel.Location = new System.Drawing.Point(10, 322);
+            this.MidMargin_Panel.Name = "MidMargin_Panel";
+            this.MidMargin_Panel.Size = new System.Drawing.Size(780, 10);
+            this.MidMargin_Panel.TabIndex = 6;
             // 
-            // panel7
+            // Data_Panel
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(778, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(2, 213);
-            this.panel7.TabIndex = 0;
+            this.Data_Panel.Controls.Add(this.Word_DataGridView);
+            this.Data_Panel.Controls.Add(this.DataTopMargin_Panel);
+            this.Data_Panel.Controls.Add(this.DataLeftMargin_Panel);
+            this.Data_Panel.Controls.Add(this.DataRightMargin_Panel);
+            this.Data_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Data_Panel.Location = new System.Drawing.Point(10, 332);
+            this.Data_Panel.Name = "Data_Panel";
+            this.Data_Panel.Size = new System.Drawing.Size(780, 213);
+            this.Data_Panel.TabIndex = 5;
             // 
-            // panel8
+            // Word_DataGridView
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(2, 213);
-            this.panel8.TabIndex = 1;
+            this.Word_DataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            this.Word_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Word_DataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Word_DataGridView.Location = new System.Drawing.Point(2, 2);
+            this.Word_DataGridView.Name = "Word_DataGridView";
+            this.Word_DataGridView.RowTemplate.Height = 25;
+            this.Word_DataGridView.Size = new System.Drawing.Size(776, 211);
+            this.Word_DataGridView.TabIndex = 3;
             // 
-            // panel9
+            // DataTopMargin_Panel
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(2, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(776, 2);
-            this.panel9.TabIndex = 2;
+            this.DataTopMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.DataTopMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DataTopMargin_Panel.Location = new System.Drawing.Point(2, 0);
+            this.DataTopMargin_Panel.Name = "DataTopMargin_Panel";
+            this.DataTopMargin_Panel.Size = new System.Drawing.Size(776, 2);
+            this.DataTopMargin_Panel.TabIndex = 2;
             // 
-            // panel10
+            // DataLeftMargin_Panel
             // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(10, 322);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(780, 10);
-            this.panel10.TabIndex = 6;
+            this.DataLeftMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.DataLeftMargin_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.DataLeftMargin_Panel.Location = new System.Drawing.Point(0, 0);
+            this.DataLeftMargin_Panel.Name = "DataLeftMargin_Panel";
+            this.DataLeftMargin_Panel.Size = new System.Drawing.Size(2, 213);
+            this.DataLeftMargin_Panel.TabIndex = 1;
             // 
-            // panel11
+            // DataRightMargin_Panel
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(12, 10);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(776, 2);
-            this.panel11.TabIndex = 9;
+            this.DataRightMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.DataRightMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.DataRightMargin_Panel.Location = new System.Drawing.Point(778, 0);
+            this.DataRightMargin_Panel.Name = "DataRightMargin_Panel";
+            this.DataRightMargin_Panel.Size = new System.Drawing.Size(2, 213);
+            this.DataRightMargin_Panel.TabIndex = 0;
             // 
-            // panel12
+            // DataBottomMargin_Panel
             // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel12.Location = new System.Drawing.Point(12, 320);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(776, 2);
-            this.panel12.TabIndex = 10;
+            this.DataBottomMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.DataBottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DataBottomMargin_Panel.Location = new System.Drawing.Point(10, 545);
+            this.DataBottomMargin_Panel.Name = "DataBottomMargin_Panel";
+            this.DataBottomMargin_Panel.Size = new System.Drawing.Size(780, 2);
+            this.DataBottomMargin_Panel.TabIndex = 4;
             // 
-            // panel13
+            // LeftMargin_Panel
             // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel13.Location = new System.Drawing.Point(10, 10);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(2, 312);
-            this.panel13.TabIndex = 8;
+            this.LeftMargin_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftMargin_Panel.Location = new System.Drawing.Point(0, 10);
+            this.LeftMargin_Panel.Name = "LeftMargin_Panel";
+            this.LeftMargin_Panel.Size = new System.Drawing.Size(10, 537);
+            this.LeftMargin_Panel.TabIndex = 3;
             // 
-            // panel14
+            // RightMargin_Panel
             // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel14.Location = new System.Drawing.Point(788, 10);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(2, 312);
-            this.panel14.TabIndex = 7;
+            this.RightMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.RightMargin_Panel.Location = new System.Drawing.Point(790, 10);
+            this.RightMargin_Panel.Name = "RightMargin_Panel";
+            this.RightMargin_Panel.Size = new System.Drawing.Size(10, 537);
+            this.RightMargin_Panel.TabIndex = 2;
             // 
-            // panel15
+            // BottomMargin_Panel
             // 
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(12, 12);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(776, 308);
-            this.panel15.TabIndex = 11;
+            this.BottomMargin_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BottomMargin_Panel.Location = new System.Drawing.Point(0, 547);
+            this.BottomMargin_Panel.Name = "BottomMargin_Panel";
+            this.BottomMargin_Panel.Size = new System.Drawing.Size(800, 10);
+            this.BottomMargin_Panel.TabIndex = 1;
+            // 
+            // TopMargin_Panel
+            // 
+            this.TopMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopMargin_Panel.Location = new System.Drawing.Point(0, 0);
+            this.TopMargin_Panel.Name = "TopMargin_Panel";
+            this.TopMargin_Panel.Size = new System.Drawing.Size(800, 10);
+            this.TopMargin_Panel.TabIndex = 0;
             // 
             // Grammatica_HomeUserControl
             // 
@@ -208,8 +222,10 @@ namespace Grammatica.User_Controls
             this.Controls.Add(this.Main_Panel);
             this.Name = "Grammatica_HomeUserControl";
             this.Size = new System.Drawing.Size(800, 557);
+            this.Load += new System.EventHandler(this.Grammatica_HomeUserControl_Load);
             this.Main_Panel.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
+            this.Data_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Word_DataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -217,20 +233,21 @@ namespace Grammatica.User_Controls
         #endregion
 
         private System.Windows.Forms.Panel Main_Panel;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel LeftMargin_Panel;
+        private System.Windows.Forms.Panel RightMargin_Panel;
+        private System.Windows.Forms.Panel BottomMargin_Panel;
+        private System.Windows.Forms.Panel TopMargin_Panel;
+        private System.Windows.Forms.Panel Data_Panel;
+        private System.Windows.Forms.Panel DataRightMargin_Panel;
+        private System.Windows.Forms.Panel DataBottomMargin_Panel;
+        private System.Windows.Forms.Panel DataLeftMargin_Panel;
+        private System.Windows.Forms.Panel MidMargin_Panel;
+        private System.Windows.Forms.Panel DataTopMargin_Panel;
+        private System.Windows.Forms.Panel WordTopMargin_Panel;
+        private System.Windows.Forms.Panel WordBottomMargin_Panel;
+        private System.Windows.Forms.Panel WordLeftMargin_Panel;
+        private System.Windows.Forms.Panel WordRightMargin_Panel;
+        private System.Windows.Forms.Panel AddWord_Panel;
+        private System.Windows.Forms.DataGridView Word_DataGridView;
     }
 }
