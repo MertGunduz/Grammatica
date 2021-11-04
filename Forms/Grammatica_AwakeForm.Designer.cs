@@ -29,6 +29,7 @@ namespace Grammatica.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Main_Panel = new System.Windows.Forms.Panel();
             this.InnerMain_Panel = new System.Windows.Forms.Panel();
             this.MainHeader_Panel = new System.Windows.Forms.Panel();
@@ -51,6 +52,7 @@ namespace Grammatica.Forms
             this.RightBorder_Panel = new System.Windows.Forms.Panel();
             this.BottomBorder_Panel = new System.Windows.Forms.Panel();
             this.TopBorder_Panel = new System.Windows.Forms.Panel();
+            this.AwakeMenu_Timer = new System.Windows.Forms.Timer(this.components);
             this.Main_Panel.SuspendLayout();
             this.InnerMain_Panel.SuspendLayout();
             this.MainHeader_Panel.SuspendLayout();
@@ -279,6 +281,10 @@ namespace Grammatica.Forms
             this.TopBorder_Panel.Size = new System.Drawing.Size(400, 2);
             this.TopBorder_Panel.TabIndex = 0;
             // 
+            // AwakeMenu_Timer
+            // 
+            this.AwakeMenu_Timer.Tick += new System.EventHandler(this.AwakeMenu_Timer_Tick);
+            // 
             // Grammatica_AwakeForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -289,6 +295,7 @@ namespace Grammatica.Forms
             this.Name = "Grammatica_AwakeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grammatica";
+            this.Load += new System.EventHandler(this.Grammatica_AwakeForm_Load);
             this.Main_Panel.ResumeLayout(false);
             this.InnerMain_Panel.ResumeLayout(false);
             this.MainHeader_Panel.ResumeLayout(false);
@@ -323,5 +330,6 @@ namespace Grammatica.Forms
         private System.Windows.Forms.Panel MainLogo_Panel;
         private System.Windows.Forms.PictureBox MainHeader_PictureBox;
         private System.Windows.Forms.PictureBox MainLogo_PictureBox;
+        private System.Windows.Forms.Timer AwakeMenu_Timer;
     }
 }

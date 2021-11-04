@@ -10,9 +10,30 @@ namespace Grammatica.Forms
 {
     public partial class Grammatica_AwakeForm : Form
     {
+        int awakeTime = 0;
+
         public Grammatica_AwakeForm()
         {
             InitializeComponent();
+        }
+
+        private void Grammatica_AwakeForm_Load(object sender, EventArgs e)
+        {
+            AwakeMenu_Timer.Start();
+        }
+
+        private void AwakeMenu_Timer_Tick(object sender, EventArgs e)
+        {
+            if (awakeTime != 100)
+            {
+                awakeTime++;
+            }
+            else
+            {
+                AwakeMenu_Timer.Stop();
+
+                // Dispose Awake Menu & Show Other Panel
+            }
         }
     }
 }
