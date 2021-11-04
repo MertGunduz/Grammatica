@@ -41,7 +41,7 @@ namespace Grammatica.Forms
             this.WindowControlBottomMargin_Panel = new System.Windows.Forms.Panel();
             this.WindowControlTopMargin_Panel = new System.Windows.Forms.Panel();
             this.Left_Panel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Navigation_Panel = new System.Windows.Forms.Panel();
             this.Settings_Button = new System.Windows.Forms.Button();
             this.Statistics_Button = new System.Windows.Forms.Button();
             this.Home_Button = new System.Windows.Forms.Button();
@@ -107,6 +107,7 @@ namespace Grammatica.Forms
             this.Minimize_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Minimize_PictureBox.TabIndex = 0;
             this.Minimize_PictureBox.TabStop = false;
+            this.Minimize_PictureBox.Click += new System.EventHandler(this.Minimize_PictureBox_Click);
             // 
             // ExitMiddleMargin_Panel
             // 
@@ -136,6 +137,7 @@ namespace Grammatica.Forms
             this.Exit_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Exit_PictureBox.TabIndex = 1;
             this.Exit_PictureBox.TabStop = false;
+            this.Exit_PictureBox.Click += new System.EventHandler(this.Exit_PictureBox_Click);
             // 
             // ExitRightMargin_Panel
             // 
@@ -164,7 +166,7 @@ namespace Grammatica.Forms
             // Left_Panel
             // 
             this.Left_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
-            this.Left_Panel.Controls.Add(this.panel1);
+            this.Left_Panel.Controls.Add(this.Navigation_Panel);
             this.Left_Panel.Controls.Add(this.Settings_Button);
             this.Left_Panel.Controls.Add(this.Statistics_Button);
             this.Left_Panel.Controls.Add(this.Home_Button);
@@ -176,13 +178,13 @@ namespace Grammatica.Forms
             this.Left_Panel.Size = new System.Drawing.Size(200, 600);
             this.Left_Panel.TabIndex = 0;
             // 
-            // panel1
+            // Navigation_Panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.panel1.Location = new System.Drawing.Point(1, 160);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2, 45);
-            this.panel1.TabIndex = 2;
+            this.Navigation_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.Navigation_Panel.Location = new System.Drawing.Point(1, 160);
+            this.Navigation_Panel.Name = "Navigation_Panel";
+            this.Navigation_Panel.Size = new System.Drawing.Size(2, 45);
+            this.Navigation_Panel.TabIndex = 2;
             // 
             // Settings_Button
             // 
@@ -205,6 +207,7 @@ namespace Grammatica.Forms
             this.Settings_Button.Text = "Settings";
             this.Settings_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Settings_Button.UseVisualStyleBackColor = true;
+            this.Settings_Button.Click += new System.EventHandler(this.Settings_Button_Click);
             // 
             // Statistics_Button
             // 
@@ -227,6 +230,7 @@ namespace Grammatica.Forms
             this.Statistics_Button.Text = "Statistics";
             this.Statistics_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Statistics_Button.UseVisualStyleBackColor = true;
+            this.Statistics_Button.Click += new System.EventHandler(this.Statistics_Button_Click);
             // 
             // Home_Button
             // 
@@ -250,6 +254,7 @@ namespace Grammatica.Forms
             this.Home_Button.Text = "Home";
             this.Home_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Home_Button.UseVisualStyleBackColor = false;
+            this.Home_Button.Click += new System.EventHandler(this.Home_Button_Click);
             // 
             // Header_Panel
             // 
@@ -302,6 +307,7 @@ namespace Grammatica.Forms
             this.Name = "Grammatica_MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grammatica";
+            this.Load += new System.EventHandler(this.Grammatica_MainForm_Load);
             this.Main_Panel.ResumeLayout(false);
             this.WindowControl_Panel.ResumeLayout(false);
             this.MinimizeLogo_Panel.ResumeLayout(false);
@@ -337,6 +343,6 @@ namespace Grammatica.Forms
         private System.Windows.Forms.Panel WindowControlTopMargin_Panel;
         private System.Windows.Forms.PictureBox Minimize_PictureBox;
         private System.Windows.Forms.PictureBox Exit_PictureBox;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Navigation_Panel;
     }
 }
