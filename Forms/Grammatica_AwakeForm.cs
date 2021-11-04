@@ -32,7 +32,9 @@ namespace Grammatica.Forms
             {
                 AwakeMenu_Timer.Stop();
 
-                // Dispose Awake Menu & Show Other Panel
+                Grammatica_MainForm grammatica_MainForm = new Grammatica_MainForm();
+                this.Hide();
+                grammatica_MainForm.Show();
             }
         }
     }

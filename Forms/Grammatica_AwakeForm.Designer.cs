@@ -283,6 +283,7 @@ namespace Grammatica.Forms
             // 
             // AwakeMenu_Timer
             // 
+            this.AwakeMenu_Timer.Interval = 10;
             this.AwakeMenu_Timer.Tick += new System.EventHandler(this.AwakeMenu_Timer_Tick);
             // 
             // Grammatica_AwakeForm

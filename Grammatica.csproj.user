@@ -4,5 +4,8 @@
     <Compile Update="Forms\Grammatica_AwakeForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Grammatica_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
