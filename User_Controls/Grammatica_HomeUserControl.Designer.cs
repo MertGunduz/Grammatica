@@ -29,9 +29,13 @@ namespace Grammatica.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Main_Panel = new System.Windows.Forms.Panel();
             this.AddWord_Panel = new System.Windows.Forms.Panel();
-            this.WordTopMargin_Panel = new System.Windows.Forms.Panel();
+            this.TopBorder_Panel = new System.Windows.Forms.Panel();
             this.WordBottomMargin_Panel = new System.Windows.Forms.Panel();
             this.WordLeftMargin_Panel = new System.Windows.Forms.Panel();
             this.WordRightMargin_Panel = new System.Windows.Forms.Panel();
@@ -47,6 +51,7 @@ namespace Grammatica.User_Controls
             this.BottomMargin_Panel = new System.Windows.Forms.Panel();
             this.TopMargin_Panel = new System.Windows.Forms.Panel();
             this.Main_Panel.SuspendLayout();
+            this.AddWord_Panel.SuspendLayout();
             this.Data_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Word_DataGridView)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +59,6 @@ namespace Grammatica.User_Controls
             // Main_Panel
             // 
             this.Main_Panel.Controls.Add(this.AddWord_Panel);
-            this.Main_Panel.Controls.Add(this.WordTopMargin_Panel);
             this.Main_Panel.Controls.Add(this.WordBottomMargin_Panel);
             this.Main_Panel.Controls.Add(this.WordLeftMargin_Panel);
             this.Main_Panel.Controls.Add(this.WordRightMargin_Panel);
@@ -73,20 +77,21 @@ namespace Grammatica.User_Controls
             // 
             // AddWord_Panel
             // 
+            this.AddWord_Panel.Controls.Add(this.TopBorder_Panel);
             this.AddWord_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddWord_Panel.Location = new System.Drawing.Point(12, 12);
+            this.AddWord_Panel.Location = new System.Drawing.Point(12, 10);
             this.AddWord_Panel.Name = "AddWord_Panel";
-            this.AddWord_Panel.Size = new System.Drawing.Size(776, 308);
+            this.AddWord_Panel.Size = new System.Drawing.Size(776, 310);
             this.AddWord_Panel.TabIndex = 11;
             // 
-            // WordTopMargin_Panel
+            // TopBorder_Panel
             // 
-            this.WordTopMargin_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
-            this.WordTopMargin_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.WordTopMargin_Panel.Location = new System.Drawing.Point(12, 10);
-            this.WordTopMargin_Panel.Name = "WordTopMargin_Panel";
-            this.WordTopMargin_Panel.Size = new System.Drawing.Size(776, 2);
-            this.WordTopMargin_Panel.TabIndex = 9;
+            this.TopBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.TopBorder_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopBorder_Panel.Location = new System.Drawing.Point(0, 0);
+            this.TopBorder_Panel.Name = "TopBorder_Panel";
+            this.TopBorder_Panel.Size = new System.Drawing.Size(776, 2);
+            this.TopBorder_Panel.TabIndex = 1;
             // 
             // WordBottomMargin_Panel
             // 
@@ -137,14 +142,52 @@ namespace Grammatica.User_Controls
             // 
             // Word_DataGridView
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            this.Word_DataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Word_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Word_DataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            this.Word_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Word_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Word_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Word_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Word_DataGridView.Cursor = System.Windows.Forms.Cursors.Arrow;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Word_DataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.Word_DataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Word_DataGridView.EnableHeadersVisualStyles = false;
+            this.Word_DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
             this.Word_DataGridView.Location = new System.Drawing.Point(2, 2);
             this.Word_DataGridView.Name = "Word_DataGridView";
-            this.Word_DataGridView.RowTemplate.Height = 25;
+            this.Word_DataGridView.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(45)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(180)))), ((int)(((byte)(253)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Word_DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.Word_DataGridView.RowHeadersVisible = false;
+            this.Word_DataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Word_DataGridView.Size = new System.Drawing.Size(776, 211);
-            this.Word_DataGridView.TabIndex = 3;
+            this.Word_DataGridView.TabIndex = 15;
             // 
             // DataTopMargin_Panel
             // 
@@ -216,14 +259,15 @@ namespace Grammatica.User_Controls
             // 
             // Grammatica_HomeUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
             this.Controls.Add(this.Main_Panel);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Grammatica_HomeUserControl";
             this.Size = new System.Drawing.Size(800, 557);
             this.Load += new System.EventHandler(this.Grammatica_HomeUserControl_Load);
             this.Main_Panel.ResumeLayout(false);
+            this.AddWord_Panel.ResumeLayout(false);
             this.Data_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Word_DataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -243,11 +287,11 @@ namespace Grammatica.User_Controls
         private System.Windows.Forms.Panel DataLeftMargin_Panel;
         private System.Windows.Forms.Panel MidMargin_Panel;
         private System.Windows.Forms.Panel DataTopMargin_Panel;
-        private System.Windows.Forms.Panel WordTopMargin_Panel;
         private System.Windows.Forms.Panel WordBottomMargin_Panel;
         private System.Windows.Forms.Panel WordLeftMargin_Panel;
         private System.Windows.Forms.Panel WordRightMargin_Panel;
         private System.Windows.Forms.Panel AddWord_Panel;
+        private System.Windows.Forms.Panel TopBorder_Panel;
         private System.Windows.Forms.DataGridView Word_DataGridView;
     }
 }

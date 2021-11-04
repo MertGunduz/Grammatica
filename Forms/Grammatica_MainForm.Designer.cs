@@ -31,6 +31,7 @@ namespace Grammatica.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grammatica_MainForm));
             this.Main_Panel = new System.Windows.Forms.Panel();
+            this.UserControl_Panel = new System.Windows.Forms.Panel();
             this.WindowControl_Panel = new System.Windows.Forms.Panel();
             this.TotalWord_Label = new System.Windows.Forms.Label();
             this.MinimizeLogo_Panel = new System.Windows.Forms.Panel();
@@ -50,8 +51,9 @@ namespace Grammatica.Forms
             this.Header_PictureBox = new System.Windows.Forms.PictureBox();
             this.Logo_Panel = new System.Windows.Forms.Panel();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
-            this.UserControl_Panel = new System.Windows.Forms.Panel();
+            this.grammatica_HomeUserControl1 = new Grammatica.User_Controls.Grammatica_HomeUserControl();
             this.Main_Panel.SuspendLayout();
+            this.UserControl_Panel.SuspendLayout();
             this.WindowControl_Panel.SuspendLayout();
             this.MinimizeLogo_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).BeginInit();
@@ -75,6 +77,15 @@ namespace Grammatica.Forms
             this.Main_Panel.Name = "Main_Panel";
             this.Main_Panel.Size = new System.Drawing.Size(1000, 600);
             this.Main_Panel.TabIndex = 0;
+            // 
+            // UserControl_Panel
+            // 
+            this.UserControl_Panel.Controls.Add(this.grammatica_HomeUserControl1);
+            this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserControl_Panel.Location = new System.Drawing.Point(200, 43);
+            this.UserControl_Panel.Name = "UserControl_Panel";
+            this.UserControl_Panel.Size = new System.Drawing.Size(800, 557);
+            this.UserControl_Panel.TabIndex = 2;
             // 
             // WindowControl_Panel
             // 
@@ -311,13 +322,15 @@ namespace Grammatica.Forms
             this.Logo_PictureBox.TabIndex = 0;
             this.Logo_PictureBox.TabStop = false;
             // 
-            // UserControl_Panel
+            // grammatica_HomeUserControl1
             // 
-            this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UserControl_Panel.Location = new System.Drawing.Point(200, 43);
-            this.UserControl_Panel.Name = "UserControl_Panel";
-            this.UserControl_Panel.Size = new System.Drawing.Size(800, 557);
-            this.UserControl_Panel.TabIndex = 2;
+            this.grammatica_HomeUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            this.grammatica_HomeUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grammatica_HomeUserControl1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.grammatica_HomeUserControl1.Location = new System.Drawing.Point(0, 0);
+            this.grammatica_HomeUserControl1.Name = "grammatica_HomeUserControl1";
+            this.grammatica_HomeUserControl1.Size = new System.Drawing.Size(800, 557);
+            this.grammatica_HomeUserControl1.TabIndex = 0;
             // 
             // Grammatica_MainForm
             // 
@@ -332,6 +345,7 @@ namespace Grammatica.Forms
             this.Text = "Grammatica";
             this.Load += new System.EventHandler(this.Grammatica_MainForm_Load);
             this.Main_Panel.ResumeLayout(false);
+            this.UserControl_Panel.ResumeLayout(false);
             this.WindowControl_Panel.ResumeLayout(false);
             this.MinimizeLogo_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).EndInit();
@@ -369,5 +383,6 @@ namespace Grammatica.Forms
         private System.Windows.Forms.Panel Navigation_Panel;
         private System.Windows.Forms.Label TotalWord_Label;
         private System.Windows.Forms.Panel UserControl_Panel;
+        private User_Controls.Grammatica_HomeUserControl grammatica_HomeUserControl1;
     }
 }
