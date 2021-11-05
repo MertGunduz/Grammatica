@@ -34,6 +34,8 @@ namespace Grammatica.Forms
             this.UserControl_Panel = new System.Windows.Forms.Panel();
             this.grammatica_HomeUserControl1 = new Grammatica.User_Controls.Grammatica_HomeUserControl();
             this.WindowControl_Panel = new System.Windows.Forms.Panel();
+            this.Refresh_PictureBox = new System.Windows.Forms.PictureBox();
+            this.RefreshMargin_Panel = new System.Windows.Forms.Panel();
             this.TotalWord_Label = new System.Windows.Forms.Label();
             this.MinimizeLogo_Panel = new System.Windows.Forms.Panel();
             this.Minimize_PictureBox = new System.Windows.Forms.PictureBox();
@@ -50,11 +52,10 @@ namespace Grammatica.Forms
             this.Header_PictureBox = new System.Windows.Forms.PictureBox();
             this.Logo_Panel = new System.Windows.Forms.Panel();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Refresh_PictureBox = new System.Windows.Forms.PictureBox();
             this.Main_Panel.SuspendLayout();
             this.UserControl_Panel.SuspendLayout();
             this.WindowControl_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Refresh_PictureBox)).BeginInit();
             this.MinimizeLogo_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).BeginInit();
             this.ExitLogo_Panel.SuspendLayout();
@@ -64,7 +65,6 @@ namespace Grammatica.Forms
             ((System.ComponentModel.ISupportInitialize)(this.Header_PictureBox)).BeginInit();
             this.Logo_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Refresh_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Main_Panel
@@ -101,7 +101,7 @@ namespace Grammatica.Forms
             // WindowControl_Panel
             // 
             this.WindowControl_Panel.Controls.Add(this.Refresh_PictureBox);
-            this.WindowControl_Panel.Controls.Add(this.panel1);
+            this.WindowControl_Panel.Controls.Add(this.RefreshMargin_Panel);
             this.WindowControl_Panel.Controls.Add(this.TotalWord_Label);
             this.WindowControl_Panel.Controls.Add(this.MinimizeLogo_Panel);
             this.WindowControl_Panel.Controls.Add(this.ExitMiddleMargin_Panel);
@@ -113,6 +113,27 @@ namespace Grammatica.Forms
             this.WindowControl_Panel.Name = "WindowControl_Panel";
             this.WindowControl_Panel.Size = new System.Drawing.Size(800, 37);
             this.WindowControl_Panel.TabIndex = 1;
+            // 
+            // Refresh_PictureBox
+            // 
+            this.Refresh_PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Refresh_PictureBox.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Refresh_PictureBox.Image = global::Grammatica.Grammatica_Resources.Grammatica_RefreshIcon;
+            this.Refresh_PictureBox.Location = new System.Drawing.Point(701, 10);
+            this.Refresh_PictureBox.Name = "Refresh_PictureBox";
+            this.Refresh_PictureBox.Size = new System.Drawing.Size(23, 27);
+            this.Refresh_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Refresh_PictureBox.TabIndex = 10;
+            this.Refresh_PictureBox.TabStop = false;
+            this.Refresh_PictureBox.Click += new System.EventHandler(this.Refresh_PictureBox_Click);
+            // 
+            // RefreshMargin_Panel
+            // 
+            this.RefreshMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.RefreshMargin_Panel.Location = new System.Drawing.Point(724, 10);
+            this.RefreshMargin_Panel.Name = "RefreshMargin_Panel";
+            this.RefreshMargin_Panel.Size = new System.Drawing.Size(10, 27);
+            this.RefreshMargin_Panel.TabIndex = 9;
             // 
             // TotalWord_Label
             // 
@@ -302,27 +323,6 @@ namespace Grammatica.Forms
             this.Logo_PictureBox.TabIndex = 0;
             this.Logo_PictureBox.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(724, 10);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 27);
-            this.panel1.TabIndex = 9;
-            // 
-            // Refresh_PictureBox
-            // 
-            this.Refresh_PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Refresh_PictureBox.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Refresh_PictureBox.Image = global::Grammatica.Grammatica_Resources.Grammatica_RefreshIcon;
-            this.Refresh_PictureBox.Location = new System.Drawing.Point(701, 10);
-            this.Refresh_PictureBox.Name = "Refresh_PictureBox";
-            this.Refresh_PictureBox.Size = new System.Drawing.Size(23, 27);
-            this.Refresh_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Refresh_PictureBox.TabIndex = 10;
-            this.Refresh_PictureBox.TabStop = false;
-            this.Refresh_PictureBox.Click += new System.EventHandler(this.Refresh_PictureBox_Click);
-            // 
             // Grammatica_MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -338,6 +338,7 @@ namespace Grammatica.Forms
             this.Main_Panel.ResumeLayout(false);
             this.UserControl_Panel.ResumeLayout(false);
             this.WindowControl_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Refresh_PictureBox)).EndInit();
             this.MinimizeLogo_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).EndInit();
             this.ExitLogo_Panel.ResumeLayout(false);
@@ -347,7 +348,6 @@ namespace Grammatica.Forms
             ((System.ComponentModel.ISupportInitialize)(this.Header_PictureBox)).EndInit();
             this.Logo_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Refresh_PictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -375,6 +375,6 @@ namespace Grammatica.Forms
         private System.Windows.Forms.Panel WindowControlTopMargin_Panel;
         public System.Windows.Forms.Label TotalWord_Label;
         private System.Windows.Forms.PictureBox Refresh_PictureBox;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel RefreshMargin_Panel;
     }
 }
